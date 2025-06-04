@@ -1,0 +1,58 @@
+/* src/pages/Works.css */
+.works {
+  padding: 2rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-left: 6px solid #ffa500;
+  padding-left: 0.5rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.work-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.work-card:hover {
+  transform: scale(1.02);
+}
+
+.work-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}

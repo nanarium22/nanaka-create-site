@@ -1,0 +1,77 @@
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro-card,
+.works-card,
+.study-card,
+.interest-card,
+.quiz-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.work-item img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.more-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: orange;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+  background-color: #cc7700;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .card-img {
+    border-radius: 8px;
+  }
+}
