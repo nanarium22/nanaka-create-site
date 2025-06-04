@@ -1,16 +1,33 @@
 import React, { useState } from 'react';
-import ModalMenu from './ModalMenu';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
-  const [showModal, setShowModal] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => setShowMenu(!showMenu);
+  const closeMenu = () => setShowMenu(false);
 
   return (
     <header className="header">
-      <button className="menu-btn" onClick={() => setShowModal(true)}>
+      <button className="menu-icon" onClick={toggleMenu}>
         ☰
       </button>
-      {showModal && <ModalMenu onClose={() => setShowModal(false)} />}
+      {showMenu && (
+        <div className="modal-menu">
+          <button className="close-button" onClick={closeMenu}>×</button>
+          <nav>
+            <ul>
+              <li><Link to="/" onClick={closeMenu}>トップ</Link></li>
+              <li><Link to="/profile" onClick={closeMenu}>自己紹介</Link></li>
+              <li><Link to="/works" onClick={closeMenu}>制作物</Link></li>
+              <li><Link to="/study" onClick={closeMenu}>勉強中</Link></li>
+              <li><Link to="/interest" onClick={closeMenu}>興味</Link></li>
+              <li><Link to="/quiz" onClick={closeMenu}>クイズ</Link></li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
