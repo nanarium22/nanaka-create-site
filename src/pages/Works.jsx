@@ -9,7 +9,6 @@ function Works() {
 
   return (
     <div className="page works">
-      <h2>制作物一覧</h2>
 <div>
           <div className="work-grid">
             {worksData
