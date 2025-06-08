@@ -11,9 +11,9 @@
 }
 
 .work-grid {
-  display: 100vw;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 横に3列（同じ幅） */
+  gap: 16px; /* 行・列の隙間（任意） */
   margin-top: 1rem;
 }
 

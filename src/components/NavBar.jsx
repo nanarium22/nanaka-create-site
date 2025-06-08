@@ -10,7 +10,6 @@ function NavBar() {
         <li><Link to="/profile">自己紹介</Link></li>
         <li><Link to="/works">制作物</Link></li>
         <li><Link to="/interest">興味があること</Link></li>
-        <li><Link to="/study">今勉強していること</Link></li>
         <li><Link to="/quiz">クイズ</Link></li>
       </ul>
     </nav>

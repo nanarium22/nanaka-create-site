@@ -15,7 +15,7 @@ function Works() {
       {categories.map((category) => (
         <div key={category}>
           <h3 className="category-title">{category}</h3>
-          <div className="work-grid overflow-x ¥-scroll">
+          <div className="grid-cols-1 md:grid-cols-3 overflow-x ¥-scroll">
             {worksData
               .filter((work) => work.category === category)
               .map((work) => (

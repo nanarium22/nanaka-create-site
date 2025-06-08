@@ -84,12 +84,6 @@ function Home({ setShowHeader }) {
               <Link to="/works" className="more-button">もっと見る</Link>
             </section>
 
-            <section className="study-card snap-section">
-              <h2>今勉強していること</h2>
-              <p>複素解析、環論、React などに取り組んでいます。</p>
-              <Link to="/study" className="more-button">もっと見る</Link>
-            </section>
-
             <section className="interest-card snap-section">
               <h2>興味があること</h2>
               <p>謎制作・教育・UI/UXデザイン・演出表現などに関心があります。</p>
