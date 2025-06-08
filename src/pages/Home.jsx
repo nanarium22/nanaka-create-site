@@ -44,7 +44,7 @@ function Home({ setShowHeader }) {
             className="intro-video"
           />
           <button className="skip-button" onClick={handleSkip}>
-            Skip
+            SKIP
           </button>
         </div>
       ) : (
@@ -60,7 +60,7 @@ function Home({ setShowHeader }) {
           <div className="content scroll-snap">
             <section className="intro-card snap-section">
               <h2>自己紹介</h2>
-              <img src="/images/profile.jpg" alt="プロフィール写真" className="card-img" />
+              <img src="/image/millemille.jpeg" alt="プロフィール写真" className="card-img" />
               <p>お茶の水女子大学 理学部数学科 学部3年</p>
               <Link to="/profile" className="more-button">もっと見る</Link>
             </section>
@@ -70,14 +70,8 @@ function Home({ setShowHeader }) {
               <Swiper spaceBetween={20} slidesPerView={1.2}>
                 <SwiperSlide>
                   <div className="work-item">
-                    <img src="/images/work1.png" alt="作品1" />
-                    <p>作品タイトル1</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="work-item">
-                    <img src="/images/work2.png" alt="作品2" />
-                    <p>作品タイトル2</p>
+                    <img src="/image/yugen.png" alt="今宵、幽幻なる孤城で魔女は嗤う" />
+                    <p>今宵、幽幻なる孤城で魔女は嗤う</p>
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -85,8 +79,8 @@ function Home({ setShowHeader }) {
             </section>
 
             <section className="interest-card snap-section">
-              <h2>興味があること</h2>
-              <p>謎制作・教育・UI/UXデザイン・演出表現などに関心があります。</p>
+              <h2>探求していること</h2>
+              <p>興味があること、勉強していること</p>
               <Link to="/interest" className="more-button">もっと見る</Link>
             </section>
 

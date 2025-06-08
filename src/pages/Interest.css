@@ -1,3 +1,9 @@
+body {
+  background-color: #0172b7; /* 柔らかいオレンジ系 */
+  margin: 0;
+  padding: 0;
+}
+
 .interest-list {
   display: flex;
   flex-direction: column;
@@ -5,7 +11,7 @@
 }
 
 .interest-card {
-  background-color: #fff3e0;
+  background-color: #fffcfa;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
