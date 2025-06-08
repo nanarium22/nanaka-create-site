@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './Works.css';
 import { worksData } from '../_functions/WorksData';
 
-const categories = ['デザイン', '謎制作', '制作指揮'];
+const categories = ['デザイン'];
 
 function Works() {
   const [selectedWork, setSelectedWork] = useState(null);

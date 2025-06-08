@@ -7,14 +7,14 @@ function Profile() {
       <h2>自己紹介</h2>
       <div className="profile-card">
         <img
-          src="https://github.com/nanarium22/nanaka-create-site/blob/main/public/image/millemille.jpeg"
+          src="/image/millemille.jpeg"
           alt="プロフィール画像"
           className="profile-image"
         />
         <div className="profile-info">
           <h3>井口奈々花</h3>
           <p>お茶の水女子大学 理学部数学科 学部3年</p>
-          <p>趣味は宝石のイラスト制作・動画制作・イベントサイト制作など。</p>
+          <p>趣味はイラスト制作・動画制作・イベントサイト制作など。</p>
         </div>
       </div>
     </div>
