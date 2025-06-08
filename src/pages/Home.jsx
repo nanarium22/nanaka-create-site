@@ -61,7 +61,7 @@ function Home({ setShowHeader }) {
             <section className="intro-card snap-section">
               <h2>自己紹介</h2>
               <img src="/images/profile.jpg" alt="プロフィール写真" className="card-img" />
-              <p>こんにちは、〇〇大学で情報学を学んでいます。Web制作や謎解きが好きです。</p>
+              <p>お茶の水女子大学 理学部数学科 学部3年</p>
               <Link to="/profile" className="more-button">もっと見る</Link>
             </section>
 
