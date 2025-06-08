@@ -4,35 +4,39 @@
   right: 0;
   padding: 1rem;
   z-index: 1000;
+  color: #062f48;
 }
 
 .menu-icon {
-  font-size: 2rem;
+  font-size: 4rem;
   background: none;
   border: none;
   cursor: pointer;
+  color: #fffcfa;
 }
 
 .modal-menu {
   position: fixed;
   top: 0;
   right: 0;
-  width: 80%;
+  width: auto;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.95);
+  background: #7ee9f9;
   box-shadow: -2px 0 10px rgba(0,0,0,0.2);
   padding: 2rem;
   z-index: 999;
+  color: #062f48;
 }
 
 .close-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 2rem;
+  font-size: 4rem;
   background: none;
   border: none;
   cursor: pointer;
+  color: #fffcfa;
 }
 
 .modal-menu ul {

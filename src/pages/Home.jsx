@@ -84,11 +84,6 @@ function Home({ setShowHeader }) {
               <Link to="/interest" className="more-button">もっと見る</Link>
             </section>
 
-            <section className="quiz-card snap-section">
-              <h2>クイズ</h2>
-              <p>オリジナルの謎解きに挑戦してみよう！</p>
-              <Link to="/quiz" className="more-button">解いてみる</Link>
-            </section>
           </div>
         </div>
       )}

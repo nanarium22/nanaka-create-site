@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Works from './pages/Works';
 import Interest from './pages/Interest';
-import Quiz from './pages/Quiz';
 
 function App() {
   const [showHeader, setShowHeader] = useState(true); // 動画中は false
@@ -19,7 +18,6 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/works" element={<Works />} />
         <Route path="/interest" element={<Interest />} />
-        <Route path="/quiz" element={<Quiz />} />
       </Routes>
     </Router>
   );

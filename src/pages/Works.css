@@ -3,25 +3,39 @@
   padding: 2rem;
 }
 
-.category-title {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  border-left: 6px solid #ffa500;
-  padding-left: 0.5rem;
-}
-
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 横に3列（同じ幅） */
-  gap: 16px; /* 行・列の隙間（任意） */
-  margin-top: 1rem;
+  grid-template-columns: repeat(1, 1fr); /* モバイル用：1列 */
+  gap: 1rem; /* カード同士の余白 */
+}
+
+/* 画面幅600px以上で2列 */
+@media (min-width: 800px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 画面幅900px以上で3列 */
+@media (min-width: 1100px) {
+  .work-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 画面幅900px以上で4列 */
+@media (min-width: 1500px) {
+  .work-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .work-card {
-  background: #fff;
+  background: #fffcfa;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   width: 300px;
+  margin: auto;
   padding: 1rem;
   cursor: pointer;
   transition: transform 0.2s;
@@ -47,13 +61,44 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
+  font-size: 30px;
+  color: #062f48;
 }
 
 .modal-content {
-  background: #fff;
+  background: #fffcfa;
   padding: 2rem;
   border-radius: 12px;
-  max-width: 90%;
-  max-height: 90%;
-  overflow-y: auto;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  max-height: 80%;
+  overflow-y: scroll;
+  display: block;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-content button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #7ee9f9;
+  color: #fffcfa;
+  font-size: 20px;
+  border-width: 0px;
+  font-weight: bold;
+}
+
+.modal-content button:hover {
+  background-color: #0172b7;
+}
+
+.more-link {
+  display: block;
+  margin-bottom: 2rem;
+  color: #0172b7;
+  transition: background-color 0.3s ease;
 }

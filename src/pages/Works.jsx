@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import './Works.css';
 import { worksData } from '../_functions/WorksData';
-
-const categories = ['デザイン'];
+import { Link } from 'react-router-dom';
 
 function Works() {
   const [selectedWork, setSelectedWork] = useState(null);
@@ -11,13 +10,9 @@ function Works() {
   return (
     <div className="page works">
       <h2>制作物一覧</h2>
-
-      {categories.map((category) => (
-        <div key={category}>
-          <h3 className="category-title">{category}</h3>
-          <div className="grid-cols-1 md:grid-cols-3 overflow-x ¥-scroll">
+<div>
+          <div className="work-grid">
             {worksData
-              .filter((work) => work.category === category)
               .map((work) => (
                 <div
                   key={work.id}
@@ -26,12 +21,16 @@ function Works() {
                 >
                   <img src={work.image} alt={work.title} />
                   <h4>{work.title}</h4>
-                  <p>{work.description}</p>
-                </div>
+                  {work.description.split('\n').map((line, index) => (
+                <p key={index}>
+                  {line}
+                  <br />
+                </p>
+              ))}
+                              </div>
               ))}
           </div>
         </div>
-      ))}
 
       {selectedWork && (
         <div className="modal" onClick={() => setSelectedWork(null)}>
@@ -39,6 +38,7 @@ function Works() {
             <h3>{selectedWork.title}</h3>
             <img src={selectedWork.image} alt={selectedWork.title} />
             <p>{selectedWork.detail}</p>
+            {selectedWork.link && <Link to={selectedWork.link} className="more-link">ホームページを見る</Link>}
             <button onClick={() => setSelectedWork(null)}>閉じる</button>
           </div>
         </div>

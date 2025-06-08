@@ -20,9 +20,8 @@ function Header() {
             <ul>
               <li><Link to="/" onClick={closeMenu}>トップ</Link></li>
               <li><Link to="/profile" onClick={closeMenu}>自己紹介</Link></li>
-              <li><Link to="/works" onClick={closeMenu}>制作物</Link></li>
-              <li><Link to="/interest" onClick={closeMenu}>興味</Link></li>
-              <li><Link to="/quiz" onClick={closeMenu}>クイズ</Link></li>
+              <li><Link to="/works" onClick={closeMenu}>制作</Link></li>
+              <li><Link to="/interest" onClick={closeMenu}>探求</Link></li>
             </ul>
           </nav>
         </div>

@@ -10,9 +10,8 @@ function ModalMenu({ onClose }) {
         <nav>
           <ul>
             <li><Link to="/profile">自己紹介</Link></li>
-            <li><Link to="/works">制作物</Link></li>
-            <li><Link to="/interest">興味があること</Link></li>
-            <li><Link to="/quiz">クイズ</Link></li>
+            <li><Link to="/works">制作</Link></li>
+            <li><Link to="/interest">探求</Link></li>
           </ul>
         </nav>
       </div>
