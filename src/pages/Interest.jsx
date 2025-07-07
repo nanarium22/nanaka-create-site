@@ -21,7 +21,7 @@ function Interest() {
     },
     {
       title: "🎥 動画制作",
-      description: "After EffectsやPremiere Proで動画も作ってます！\nまだまだ初心者ですが、解説動画を見ながら少しずつレベルアップ中です。",
+      description: "AfterEffectsやPremiereProで動画も作ってます！\nまだまだ初心者ですが、解説動画を見ながら少しずつレベルアップ中です。",
     },
   ];
 

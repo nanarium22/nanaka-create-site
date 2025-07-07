@@ -1,10 +1,23 @@
-.header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  z-index: 1000;
-  color: #062f48;
+@media screen and (min-width: 601px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 1000;
+    color: #062f48;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0rem;
+    z-index: 1000;
+    color: #062f48;
+  }
 }
 
 .menu-icon {
@@ -14,6 +27,7 @@
   cursor: pointer;
   color: #fffcfa;
 }
+
 
 .modal-menu {
   position: fixed;
@@ -48,4 +62,42 @@
 .modal-menu li {
   margin: 1rem 0;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 601px) {
+  .green-bar {
+    width: 100vw;
+    height: 200px;
+    background-color:#136934;
+    display: flex;
+    justify-content: center; /* 横方向中央揃え */
+    align-items: center;     /* 縦方向中央揃え */
+    overflow: hidden; /* これではみ出た画像を隠す */
+  }
+
+  .header-image {
+    width: 100vw;
+    max-width: 100vw;
+    height: 300px; /* 必要に応じて調整 */
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .green-bar {
+    width: 100vw;
+    height: 100px;
+    background-color:#136934;
+    display: flex;
+    justify-content: center; /* 横方向中央揃え */
+    align-items: center;     /* 縦方向中央揃え */
+    overflow: hidden; /* これではみ出た画像を隠す */
+  }
+
+  .header-image {
+    width: 80vw;
+    max-width: 100vw;
+    height: 200px; /* 必要に応じて調整 */
+    object-fit: contain;
+  }
 }

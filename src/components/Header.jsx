@@ -9,6 +9,11 @@ function Header() {
   const closeMenu = () => setShowMenu(false);
 
   return (
+    <>
+      <div className="green-bar">
+        <img src="/image/kokuban.png" alt="ヘッダー" className="header-image" />
+      </div>
+
     <header className="header">
       <button className="menu-icon" onClick={toggleMenu}>
         ☰
@@ -27,6 +32,7 @@ function Header() {
         </div>
       )}
     </header>
+    </>
   );
 }
 
