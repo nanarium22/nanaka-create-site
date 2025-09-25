@@ -66,15 +66,7 @@ function Home({ setShowHeader }) {
             </section>
 
             <section className="works-card snap-section">
-              <h2>制作物一覧</h2>
-              <Swiper spaceBetween={20} slidesPerView={1.2}>
-                <SwiperSlide>
-                  <div className="work-item">
-                    <img src="/image/yugen.png" alt="今宵、幽幻なる孤城で魔女は嗤う" />
-                    <p>今宵、幽幻なる孤城で魔女は嗤う</p>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
+              <h2></h2>
               <Link to="/works" className="more-button">もっと見る</Link>
             </section>
 

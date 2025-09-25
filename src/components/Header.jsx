@@ -25,8 +25,8 @@ function Header() {
             <ul>
               <li><Link to="/" onClick={closeMenu}>トップ</Link></li>
               <li><Link to="/profile" onClick={closeMenu}>自己紹介</Link></li>
-              <li><Link to="/works" onClick={closeMenu}>制作</Link></li>
-              <li><Link to="/interest" onClick={closeMenu}>探求</Link></li>
+              <li><Link to="/works" onClick={closeMenu}></Link></li>
+              <li><Link to="/interest" onClick={closeMenu}></Link></li>
             </ul>
           </nav>
         </div>
