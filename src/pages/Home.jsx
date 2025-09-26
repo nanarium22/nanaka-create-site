@@ -66,11 +66,6 @@ function Home({ setShowHeader }) {
             </section>
 
             <section className="works-card snap-section">
-              <h2></h2>
-              <Link to="/works" className="more-button">もっと見る</Link>
-            </section>
-
-            <section className="works-card snap-section">
               <h2>探求していること</h2>
               <p>興味があること、勉強していること</p>
               <Link to="/interest" className="more-button">もっと見る</Link>
